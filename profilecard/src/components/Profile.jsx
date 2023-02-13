@@ -4,8 +4,8 @@ export default function Profile({image, name, title, isLogin, isLogout}) {
     return (
         <div className='profile'>
             <img className='photo' src={image} alt="" />
-            {isLogin && <span className='login'>login</span>}
-            {isLogout && <span className='logout'>logout</span>}
+            {isLogin && <span className='login'></span>}
+            {isLogout && <span className='logout'></span>}
             <h2 className='name'>{name}</h2>
             <p className='title'>{title}</p>
             <LikeBtn />

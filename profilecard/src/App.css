@@ -1,3 +1,7 @@
+body {
+  display: flex;
+}
+
 .profile {
   height: 33rem;
   width: 30rem;
