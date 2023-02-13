@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-export default function Profile({image, name, title, isLogin, isLogout}) {
+export default function Profile({image, name, title, isLogin}) {
     return (
         <div className='profile'>
             <img className='photo' src={image} alt="" />
-            {isLogin && <span className='login'></span>}
-            {isLogout && <span className='logout'></span>}
+            <span className={isLogin? 'login':'logout'}></span>
             <h2 className='name'>{name}</h2>
             <p className='title'>{title}</p>
             <LikeBtn />
