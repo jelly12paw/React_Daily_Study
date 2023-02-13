@@ -3,11 +3,11 @@ import { useState } from 'react';
 export default function Profile({image, name, title, isLogin, isLogout}) {
     return (
         <div className='profile'>
-            <img src={image} alt="" />
-            <h2>{name}</h2>
-            <p>{title}</p>
-            {isLogin && <span></span>}
-            {isLogout && <span></span>}
+            <img className='photo' src={image} alt="" />
+            {isLogin && <span className='login'>login</span>}
+            {isLogout && <span className='logout'>logout</span>}
+            <h2 className='name'>{name}</h2>
+            <p className='title'>{title}</p>
             <LikeBtn />
         </div>
     );
@@ -21,8 +21,8 @@ function LikeBtn() {
     }
 
     return (
-        <button onClick={handleClick}>
-            Like {count}
+        <button className='likebtn' onClick={handleClick}>
+            ♥ {count}
         </button>
     );
 }

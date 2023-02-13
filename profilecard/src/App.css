@@ -1,38 +1,71 @@
-.App {
+.profile {
+  height: 33rem;
+  width: 30rem;
+  background-color: rgb(255, 232, 232);
+  box-shadow: -1px 2px 15px 12px rgba(245,203,203,0.75);
+  -webkit-box-shadow: -1px 2px 15px 12px rgba(245,203,203,0.75);
+  -moz-box-shadow: -1px 2px 15px 12px rgba(245,203,203,0.75);
+  position: relative;
+  margin: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.photo {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+  margin-top: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: dimgray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title {
+  font-size: 1.2rem;
+  color: gray;
+  margin-top: -0.4rem;
+}
+
+.login {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: green;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: transparent;
+}
+
+.logout {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 100%;
+  padding: 0.2rem;
+  color: transparent;
+}
+
+.likebtn {
+  background-color: white;
+  border-style: solid;
+  border-color: palevioletred;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  color: palevioletred;
+  margin-top: -0.3rem;
+}
+
+.likebtn:hover {
+  background-color: palevioletred;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
