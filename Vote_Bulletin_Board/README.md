@@ -4,3 +4,4 @@
 
 ## **구현 화면**
 
+![voteboard](./voteboard.gif)
