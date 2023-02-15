@@ -4,7 +4,7 @@ export default function IdolCard({image, idolname, song, onClick, total}) {
     const [cnt, setCnt] = useState(0);
 
     let voteRate = 0;
-    if (total) { voteRate = total / cnt;}
+    if (total) { voteRate = parseInt((cnt / total) * 100);}
     
     return (
         <div className='idol-card'>
