@@ -1,0 +1,30 @@
+[
+    {
+        "title": "생활",
+        "content": "오전 9시에 기상하기",
+        "icon": "bi bi-clipboard-check",
+        "color": "olive",
+        "text": "line-through"
+    },
+    {
+        "title": "생활",
+        "content": "필라테스하기",
+        "icon": "bi bi-clipboard-check",
+        "color": "olive",
+        "text": "line-through"
+    },
+    {
+        "title": "공부",
+        "content": "리액트 공식 문서 읽기",
+        "icon": "bi bi-clipboard-check",
+        "color": "olive",
+        "text": "line-through"
+    },
+    {
+        "title": "취미",
+        "content": "그림 그리기",
+        "icon": "bi bi-clipboard-check",
+        "color": "olive",
+        "text": "line-through"
+    }
+]

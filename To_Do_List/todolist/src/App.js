@@ -3,7 +3,7 @@ import './App.css';
 import ToDos from './components/ToDos';
 
 function App() {
-  const [showToDos, setShowToDos] = useState(0);
+  const [showToDos, setShowToDos] = useState([]);
   return (
     <div className='todos'>
       {showToDos && <ToDos/>}
