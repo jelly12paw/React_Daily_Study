@@ -1,0 +1,12 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(236, 186, 236);
+}
+
+.cursor {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(../kuromi.png);
+    background-size: 100%;
+}

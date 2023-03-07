@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Mouse Cursor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **구현 화면**
+![화면](./mousecursor.gif)
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## [**PointerMove**](https://developer.mozilla.org/en-US/docs/Web/API/Element/pointermove_event)
 
-### `yarn start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> pointer의 `좌표값이 변경`될 때 발생하는 이벤트
+>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
+<hr>
+<br>
 
-### `yarn test`
+## **Refactoring**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `yarn build`
+```javascript
+// x좌표와 y좌표를 각각 변수 선언
+const [X, setX] = useState(0);
+const [Y, setY] = useState(0);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+onPointerMove = {(e) => {
+    setX = e.clientX;
+    setY = e.clientY;
+}};
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 이전 코드
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> x좌표와 y좌표를 각각 변수 선언을 해준 후, PointerMove 이벤트가 발생하면 마우스 커서의 x값, y값을 각각 setX, setY에 저장했다. 
+>
 
-### `yarn eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```javascript
+// x좌표와 y좌표를 하나의 객체로 만들어 변수를 선언
+const [position, setPosition] = useState({x: 0, y: 0});
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+onPointerMove = {(e) => {
+    setPosition({x: e.clientX, y: e.clientY})
+}};
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 리팩토링 코드
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> x좌표와 y좌표는 동시에 업데이트되기 때문에 서로 연관있는 데이터이기에 하나의 객체로 관리하는 것이 효율적이다. 
+>
