@@ -1,0 +1,154 @@
+.navbar {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.logo {
+    position: relative;
+    cursor: pointer;
+}
+
+.logo:active::before {
+    content: "";
+    position: absolute;
+    left: -0.5rem;
+    bottom: -0.5rem;
+    padding: 1.5rem 5rem;
+    border: 0.1rem dashed black;
+}
+
+.logo img {
+    height: 1.9rem;
+    margin-right: 1rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+li {
+    cursor: pointer;
+    margin: 0 1rem;
+    list-style: none;
+    position: relative;
+}
+
+li:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -0.4rem;
+    border-bottom: 0.2rem solid black;
+}
+
+li:active::before {
+    content: "";
+    position: absolute;
+    left: -0.5rem;
+    bottom: -0.9rem;
+    padding: 1.5rem 0.5rem;
+    border: 0.1rem dashed black;
+}
+
+.deactive {
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    width: 95%;
+    margin: 0 3rem;
+    background-color: #f2f2f2;
+    border: 0.1rem solid #e6e6e6;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.active .options {
+    visibility: visible;
+    opacity: 1;
+}
+
+.showmenu {
+    position: absolute;
+    top: 0.2rem;
+    right: 15.89rem;
+    background-color: #f2f2f2;
+    padding: 1.5rem 0.2rem 1.7rem 1rem;
+    border: 0.1rem dashed black;
+}
+
+.showmenu:active::before, .showmenu:hover::before {
+    border: none;
+}
+
+.menu_icon {
+    font-size: 1.7rem;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: -6rem;
+    padding: 0.2rem 0.4rem;
+    width: 650%;
+    background-color: white;
+    text-align: center;
+    font-size: 1rem;
+    border: 0.1rem solid #e6e6e6;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+.menu_icon:hover .tooltip {
+    display: block;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+p:hover {
+    border-bottom: 0.1rem solid black;
+}
+
+.sitemap {
+    background-color: #e6e6e6;
+    border-bottom: 0.2rem solid black;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 860px) {
+    
+}
