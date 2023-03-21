@@ -1,0 +1,59 @@
+.active {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 5.3rem;
+}
+
+.deactive {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 24rem;
+    height: 26rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.img {
+    width: 22rem;
+}
+
+.new {
+    background-color: #ffb900;
+    width: 6rem;
+    padding: 0.2rem 1rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0067b8;
+}
+
+.detailicon {
+    margin-bottom: -0.2rem;
+}
