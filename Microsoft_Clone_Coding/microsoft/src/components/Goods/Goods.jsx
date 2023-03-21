@@ -8,7 +8,7 @@ export default function Goods({ data, isBusiness }) {
     const business = isBusiness;
     
     return (
-        <>
+        <div className={styles.container}>
             <div className={business ? styles['active'] : styles['deactive']}>비즈니스용</div>        
             <div className={styles.cards}>
                 {productData.map((datas, idx) => (
@@ -21,7 +21,7 @@ export default function Goods({ data, isBusiness }) {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     );
 }
 
