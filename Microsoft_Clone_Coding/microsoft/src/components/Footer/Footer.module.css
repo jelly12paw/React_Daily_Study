@@ -1,0 +1,61 @@
+.tables {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    margin-top: 13rem;
+    padding: 0 5rem;
+}
+
+.container {
+    padding: 2.5em;
+}
+
+.title {
+    color: #616161;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.text {
+    color: #616161;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.textbold {
+    color: #616161;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+.infotext {
+    color: #616161;
+    font-size: 1rem;
+    margin: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.6rem;
+    margin-bottom: -0.3rem;
+    margin-right: 0.3rem;
+}
+
+.text:hover, .textbold:hover, .infotext:hover {
+    border-bottom: 1px solid #616161;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+    background-color: #f9f9f9;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
