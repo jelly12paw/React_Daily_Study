@@ -1,13 +1,36 @@
+.follower {
+    display: flex;
+    padding-top: 11rem;
+    margin: 0 6rem;
+}
+
+.content {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.sns {
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    padding: 0 0.3rem;
+    cursor: pointer;
+}
+
+.sns:active {
+    border: 2px dotted #0067b8;
+}
+
 .tables {
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    margin-top: 13rem;
+    margin-top: 10rem;
     padding: 0 5rem;
 }
 
 .container {
-    padding: 2.5em;
+    padding: 2.5rem;
+    margin-bottom: -2rem;
 }
 
 .title {

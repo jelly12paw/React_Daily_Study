@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import {ImEarth} from 'react-icons/im';
+import {ImEarth, ImTwitter} from 'react-icons/im';
+import {FaFacebookF} from 'react-icons/fa';
 
 const table = [
     {
@@ -68,6 +69,11 @@ const table = [
 export default function Footer() {
     return (
         <footer>
+            <div className={styles.follower}>
+                <div className={styles.content}>Microsoft 팔로우</div>
+                <div className={styles.sns}><FaFacebookF/></div>
+                <div className={styles.sns}><ImTwitter/></div>
+            </div>
             <div className={styles.tables}>
                 {table.map((lists, idx) => (
                     <div className={styles.container} key={idx}>
