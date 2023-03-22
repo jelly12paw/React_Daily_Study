@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import Carousel from './components/Carousel/Carousel';
 import ButtonIcon from './components/ButtonIcon/ButtonIcon';
 import Goods from './components/Goods/Goods';
 import products from './components/Goods/products';
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Carousel/>
       <ButtonIcon/>
       <Goods data={products} isBusiness={false}/>
       <Xbox/>

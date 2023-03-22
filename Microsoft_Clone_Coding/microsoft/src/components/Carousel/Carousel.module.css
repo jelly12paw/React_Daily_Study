@@ -1,0 +1,78 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.item {
+    width: 100vw;
+    position: relative;
+}
+
+.item img {
+    width: 100vw;
+}
+
+.iteminfo {
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    width: 31rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.3rem;
+    margin: 2.5rem 0;
+}
+
+.btn {
+    background-color: #0067b8;
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00477e;
+}
+
+.detail {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-style: none;
+    margin-left: 2rem;
+}
+
+.detailicon {
+    margin-bottom: -0.1rem;
+}
+
+.buttons {
+    margin : 2rem 0 7rem 0;
+    text-align: center;
+}
+
+.prev_btn, .next_btn {
+    background-color: transparent;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+.prev_btn:hover, .next_btn:hover {
+    opacity: 0.5;
+}
+
+.move {
+    transform: translateX(100%);
+}
