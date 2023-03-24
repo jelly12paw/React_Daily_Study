@@ -8,7 +8,6 @@
 .logos {
     display: flex;
     align-items: center;
-    width: 50%;
 }
 
 .logo {
@@ -21,21 +20,10 @@
     font-weight: 800;
 }
 
-.search {
-    width: 30%;
-}
-
-.search:hover {
-    border-color: black;
-}
 
 @media (max-width: 1080px) {
     .title {
       font-size: 1.5rem;
-    }
-
-    .search {
-        width: 60%;
     }
 }
 
