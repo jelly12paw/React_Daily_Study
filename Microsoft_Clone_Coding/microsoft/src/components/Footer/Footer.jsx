@@ -77,15 +77,15 @@ export default function Footer() {
             <div className={styles.tables}>
                 {table.map((lists, idx) => (
                     <div className={styles.container} key={idx}>
-                        <div className={styles.title}>{lists.title}</div>
-                        <div className={styles.text}>{lists.list1}</div>
-                        <div className={styles.text}>{lists.list2}</div>
-                        <div className={styles.text}>{lists.list3}</div>
-                        <div className={styles.text}>{lists.list4}</div>
-                        <div className={styles.text}>{lists.list5}</div>
-                        <div className={styles.text}>{lists.list6}</div>
-                        <div className={styles.text}>{lists.list7}</div>
-                        <div className={styles.text}>{lists.list8}</div>
+                        <p className={styles.title}>{lists.title}</p>
+                        <p className={styles.text}>{lists.list1}</p>
+                        <p className={styles.text}>{lists.list2}</p>
+                        <p className={styles.text}>{lists.list3}</p>
+                        <p className={styles.text}>{lists.list4}</p>
+                        <p className={styles.text}>{lists.list5}</p>
+                        <p className={styles.text}>{lists.list6}</p>
+                        <p className={styles.text}>{lists.list7}</p>
+                        <p className={styles.text}>{lists.list8}</p>
                     </div>
                 ))}
             </div>

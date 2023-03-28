@@ -15,7 +15,7 @@ const items = [
         title : '최대 25% 할인혜택',
         text : 'Surface, Xbox 및 Microsoft 365를 포함한 다양한 제품을 특가에 만나보세요.',
         btn : '지금 쇼핑하기'
-    }
+    },
 ]
 
 const TOTAL_SLIDES = 1;
@@ -27,6 +27,7 @@ export default function Carousel() {
   
     // Next 버튼 클릭 시
     const NextSlide = () => {
+      console.log(currentSlide)
       if (currentSlide >= TOTAL_SLIDES) {
         // 더 이상 넘어갈 슬라이드가 없으면
         setCurrentSlide(0); // 1번째 사진으로 넘어갑니다.
@@ -42,6 +43,7 @@ export default function Carousel() {
         // return;  // 클릭이 작동하지 않습니다.
       } else {
         setCurrentSlide(currentSlide - 1);
+        console.log(currentSlide);
       }
     };
   
